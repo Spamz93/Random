@@ -1,9 +1,7 @@
 const readline = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
-
 });
-//console.log('Hello, this is your first random-generated sentence:')
 function RSG(){
    let names = ["Peter", "Michell", "Jane", "Steve"]
    let places = ["Sofia", "Plovdiv", "Burgas", "Varna"]
@@ -28,7 +26,6 @@ function RSG(){
 
    let sentence = `${who} ${action} ${randomDetails}`
 
-   //console.log('Hello, this is your first random-generated sentence:')
    console.log(sentence);
    readline.question('Click [Enter] to generate a new one.', () => {
     RSG();
@@ -36,4 +33,3 @@ function RSG(){
 }
 console.log('Hello, this is your first random-generated sentence:')
 RSG();
-
